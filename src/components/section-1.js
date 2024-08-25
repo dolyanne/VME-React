@@ -12,8 +12,8 @@ export default function Improving() {
     {/* Background Circles */}
     <div className="circle bg-purple-600 w-56 h-56 top-16 left-16 opacity-50" />
     <div className="circle bg-purple-700 w-40 h-40 top-1/4 right-1/4 opacity-75" />
-    <div className="circle bg-pink-500 w-32 h-32 bottom-1/4 left-1/4 opacity-50" />
-    <div className="circle bg-purple-800 w-24 h-24 bottom-16 right-16 opacity-75" />
+    {/* <div className="circle bg-pink-500 w-32 h-32 bottom-1/4 left-1/4 opacity-50" />
+    <div className="circle bg-purple-800 w-24 h-24 bottom-16 right-16 opacity-75" /> */}
     <div className="container mx-auto text-center relative z-10">
       <section className="">
         <div className="flex flex-col lg:flex-row justify-center items-start gap-8">

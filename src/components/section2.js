@@ -4,13 +4,19 @@ import useScrollAnimation from './useScrollAnimation';
 export default function PricePlans() {
     const sectionRef = useScrollAnimation('animate-section');
   return (
-    <div id='pricing' className="bg-gray-200 pb-10 px-2">
+    <div className="price-plans" ref={sectionRef}>
+       {/* <!-- Background Circles --> */}
+        <div className="circle bg-purple-600 w-72 h-72 top-0 left-0 opacity-50"></div>
+        <div className="circle bg-purple-700 w-40 h-40 top-1/4 right-1/4 opacity-75"></div>
+        <div className="circle bg-pink-500 w-32 h-32 bottom-1/4 left-1/4 opacity-50"></div>
+        <div className="circle bg-purple-800 w-24 h-24 bottom-16 right-16 opacity-75"></div>
+    <div id='pricing' className="bg-[#230335] pb-10 px-2">
     <section className="section py-24">
       <div className="flex justify-center ">
         <div className="pt-2">
-          <div className="w-24  h-1 bg-[#210335] mb-4" />
-          <div className=" text-5xl font-bold text-[#210335] pb-28">
-            Price <span className="text-purple-600">Plans</span>
+          <div className="w-24  h-1 bg-[#230335] mb-4" />
+          <div className=" text-5xl font-bold text-white pb-28">
+            Price <span className="text-[#d9a6f9]">Plans</span>
           </div>
         </div>
       </div>
@@ -76,7 +82,9 @@ export default function PricePlans() {
         style={{ bottom: "-50px", left: "-50px" }}
       />
     </section>
-    <div ref={sectionRef} id="hero" className=" p-10 md:p-20">
+    
+  </div>
+  <div ref={sectionRef} id="hero"  className=" bg-[#f5f5f5] p-10 md:p-20 ">
       <div className="relative w-full min-h-96 rounded-lg overflow-hidden shadow-lg bg-gray-100">
         <a href="#">
           <img

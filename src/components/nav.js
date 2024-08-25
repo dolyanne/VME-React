@@ -1,13 +1,28 @@
 import React, { useState } from 'react';
 
 export default function Nav() {
-  // State to track if the mobile menu is open
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Function to toggle the menu open/close state
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // const scrollToSection = (id) => {
+  //   const section = document.getElementById(id);
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+  
 
   return (
     <header>
@@ -23,7 +38,6 @@ export default function Nav() {
               alt="VME Logo"
             />
           </a>
-          {/* Mobile Menu Toggle Button */}
           <button
             className="block md:hidden text-[#210335] focus:outline-none"
             onClick={toggleMenu}
@@ -43,99 +57,107 @@ export default function Nav() {
               />
             </svg>
           </button>
-          {/* Main Navigation Menu */}
           <ul className="hidden md:flex space-x-6">
             <li>
-              <a
-                href="#home"
+              <button
+                onClick={() => scrollToSection('home')}
                 className="text-[#210335] hover:text-pink-400 hover:border-b-2 border-pink-400"
               >
                 Home
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#product-plan"
+              <button
+                onClick={() => scrollToSection('product-plan')}
                 className="text-[#210335] hover:text-pink-400 hover:border-b-2 border-pink-400"
               >
                 Features
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#pricing"
+              <button
+                onClick={() => scrollToSection('pricing')}
                 className="text-[#210335] hover:text-pink-400 hover:border-b-2 border-pink-400"
               >
                 Pricing
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#testimonials"
+              <button
+                onClick={() => scrollToSection('testimonials')}
                 className="text-[#210335] hover:text-pink-400 hover:border-b-2 border-pink-400"
               >
                 Testimonials
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#contact"
+              <button
+                onClick={() => scrollToSection('contact')}
                 className="text-[#210335] hover:text-pink-400 hover:border-b-2 border-pink-400"
               >
                 Contact
-              </a>
+              </button>
             </li>
           </ul>
-          {/* Mobile Menu */}
           <ul
             className={`md:hidden absolute top-full left-0 w-full bg-gray-900 py-2 space-y-2 ${
               isMenuOpen ? 'block' : 'hidden'
             }`}
           >
             <li>
-              <a
-                href="#home"
+              <button
+                onClick={() => {
+                  scrollToSection('home');
+                  toggleMenu();
+                }}
                 className="block text-white px-10 hover:text-pink-400"
-                onClick={toggleMenu}
               >
                 Home
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#product-plan"
+              <button
+                onClick={() => {
+                  scrollToSection('product-plan');
+                  toggleMenu();
+                }}
                 className="block text-white px-10 hover:text-pink-400"
-                onClick={toggleMenu}
               >
                 Features
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#pricing"
+              <button
+                onClick={() => {
+                  scrollToSection('pricing');
+                  toggleMenu();
+                }}
                 className="block text-white px-10 hover:text-pink-400"
-                onClick={toggleMenu}
               >
                 Pricing
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#testimonials"
+              <button
+                onClick={() => {
+                  scrollToSection('testimonials');
+                  toggleMenu();
+                }}
                 className="block text-white px-10 hover:text-pink-400"
-                onClick={toggleMenu}
               >
                 Testimonials
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#contact"
+              <button
+                onClick={() => {
+                  scrollToSection('contact');
+                  toggleMenu();
+                }}
                 className="block text-white px-10 hover:text-pink-400"
-                onClick={toggleMenu}
               >
                 Contact
-              </a>
+              </button>
             </li>
           </ul>
         </div>
