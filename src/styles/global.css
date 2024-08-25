@@ -1,0 +1,456 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #210335;
+    /* Main background color */
+    color: white;
+    /* Default text color */
+}
+
+.section {
+    padding: 100px 0;
+    /* Section padding */
+    position: relative;
+    text-align: center;
+}
+
+.header {
+    background-color: red;
+    /* Header background color */
+    color: burlywood;
+    /* Header text color */
+    padding: 16px 0;
+    /* Header padding */
+    position: fixed;
+    height: 40px;
+}
+
+.hero {
+    background-image: url("/img/images/hero.banner-1.jpg");
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Transparent background */
+    /* padding: 100px 0; */
+    /* Hero padding */
+    text-align: center;
+    position: relative;
+    /* z-index: 1; */
+    height: 500px;
+}
+
+.hero-title {
+    font-size: 48px;
+    /* Hero title font size */
+    font-weight: 700;
+    /* Hero title font weight */
+    margin-bottom: 24px;
+    /* Hero title bottom margin */
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    /* Hero subtitle font size */
+    margin-bottom: 48px;
+    /* Hero subtitle bottom margin */
+}
+
+.cta-button {
+    background-color: #8B5CF6;
+    /* CTA button background color */
+    color: white;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #7C3AED;
+    /* CTA button hover color */
+}
+
+.section-title {
+    font-size: 48px;
+    /* Title font size */
+    font-weight: 700;
+    /* Title font weight */
+    margin-bottom: 16px;
+    /* Title bottom margin */
+}
+
+.section-subtitle {
+    font-size: 24px;
+    /* Subtitle font size */
+    margin-bottom: 48px;
+    /* Subtitle bottom margin */
+}
+
+.card {
+    background: white;
+    /* Card background color */
+    border-radius: 18px;
+    /* Card border radius */
+    padding: 32px;
+    /* Card padding */
+    margin: 16px;
+    width: 300px;
+    /* Card width */
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    /* Card shadow */
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 4px solid #712e9e;
+    background-color: #a038eb;
+}
+/* .card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 4px solid #f6f3fa;
+    background-color: #d871ca;
+    cursor: pointer;
+} */
+
+.card-highlighted {
+    /* transform: scale(1.3); */
+    /* Slightly larger card */
+    z-index: 20;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f6f3fa;
+    background-color: #f2eff7;
+    height: 400px;
+
+
+}
+
+.card-title {
+    font-size: 24px;
+    /* Card title font size */
+    font-weight: 600;
+    /* Card title font weight */
+    margin-bottom: 8px;
+    /* Card title bottom margin */
+}
+
+.card-price {
+    font-size: 32px;
+    /* Card price font size */
+    font-weight: 700;
+    /* Card price font weight */
+    margin-bottom: 16px;
+    /* Card price bottom margin */
+}
+
+.card-content {
+    font-size: 16px;
+    /* Card content font size */
+    line-height: 1.5;
+    /* Card content line height */
+    text-align: left;
+    margin-bottom: 24px;
+    /* Card content bottom margin */
+}
+
+.badge {
+    background-color: #8B5CF6;
+    /* Badge background color */
+    color: white;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 12px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+
+.ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 220px;
+    padding: 15px 0;
+    background-color: #a038eb;
+    color: #fff;
+    font-weight: bold;
+    /* text-transform: ; */
+    text-align: center;
+    transform: rotate(-45deg);
+    top: 20px;
+    left: -50px;
+}
+
+.ribbon span::before,
+.ribbon span::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 5px solid #a038eb;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.ribbon span::after {
+    left: auto;
+    right: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #a038eb;
+}
+
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #b400ff;
+}
+
+.hero-section {
+    position: relative;
+    background: url('/img/images/hero.banner-2.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.hero-content h1 span {
+    color: #b400ff;
+}
+
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+
+.hero-content p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b400ff;
+}
+
+
+.circle {
+    background-color: #a038eb;
+    /* Circle background color */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.circle-large {
+    width: 400px;
+    height: 400px;
+}
+
+.circle-small {
+    width: 100px;
+    height: 100px;
+}
+.yellow-line {
+    width: 2px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.1);
+    /* Testimonial background color */
+    border-radius: 16px;
+    /* Testimonial border radius */
+    padding: 32px;
+    /* Testimonial padding */
+    margin: 16px auto;
+    /* Testimonial margin */
+    width: 80%;
+    /* Testimonial width */
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    /* Testimonial shadow */
+}
+
+.testimonial-content {
+    font-size: 16px;
+    /* Testimonial content font size */
+    line-height: 1.5;
+    /* Testimonial content line height */
+}
+
+.testimonial-author {
+    font-weight: 600;
+    /* Testimonial author font weight */
+    margin-top: 16px;
+    /* Testimonial author top margin */
+}
+
+.testimonial-image {
+    width: 100px;
+    /* Testimonial image width */
+    height: 100px;
+    /* Testimonial image height */
+    border-radius: 50%;
+    /* Testimonial image border radius */
+    margin: 16px auto;
+    /* Testimonial image margin */
+}
+
+.footer {
+    background-color: #4C1D95;
+    /* Footer background color */
+    color: white;
+    padding: 32px 0;
+    /* Footer padding */
+    text-align: center;
+}
+@keyframes colorChange {
+0% { color: #d633ff; }   /* Red */
+25% { color: #713cc2; }  /* Green */
+50% { color: #3357FF; }  /* Blue */
+75% { color: #be1fa9; }  /* Yellow */
+100% { color: #d633ff; } /* Back to Red */
+}
+
+.vme-consulting {
+animation: colorChange 5s infinite;
+}
+
+/* Style for the parallax background */
+.parallax-bg {
+background-image: url('/img/images/hero.banner-6.jpg');
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+/* To ensure content is on top of the parallax background */
+.section {
+position: relative;
+z-index: 1;
+padding: 40px; /* Adjust as needed */
+}
+
+/* Animation for the image frames */
+@keyframes leftSlideIn {
+0% {
+transform: translateX(-30%);
+}
+100% {
+transform: translateX(10%);
+}
+}
+
+@keyframes rightSlideIn {
+0% {
+transform: translateX(30%);
+}
+100% {
+transform: translateX(-10%);
+}
+}
+
+@keyframes fadeIn {
+0% {
+opacity: 0;
+transform: translateY(20px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* Apply animations */
+.animate-left-frame {
+animation: leftSlideIn 1s ease-out forwards;
+}
+
+.animate-right-frame {
+animation: rightSlideIn 1s ease-out forwards;
+}
+
+.animate-fade-in {
+animation: fadeIn 1.5s ease-out forwards;
+}
