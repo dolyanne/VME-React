@@ -61,7 +61,7 @@ export default function Nav() {
             <li>
               <button
                 onClick={() => scrollToSection('home')}
-                className="text-[#210335] hover:text-pink-400 hover:border-b-2 border-pink-400"
+                className="text-[#42066b] hover:text-[#42066b] hover:border-b-2 border-[#42066b]"
               >
                 Home
               </button>
@@ -69,7 +69,7 @@ export default function Nav() {
             <li>
               <button
                 onClick={() => scrollToSection('product-plan')}
-                className="text-[#210335] hover:text-pink-400 hover:border-b-2 border-pink-400"
+                className="text-[#210335] hover:text-[#42066b] hover:border-b-2 border-[#42066b]"
               >
                 Features
               </button>
@@ -77,7 +77,7 @@ export default function Nav() {
             <li>
               <button
                 onClick={() => scrollToSection('pricing')}
-                className="text-[#210335] hover:text-pink-400 hover:border-b-2 border-pink-400"
+                className="text-[#210335] hover:text-[#42066b] hover:border-b-2 border-[#42066b]"
               >
                 Pricing
               </button>
@@ -85,7 +85,7 @@ export default function Nav() {
             <li>
               <button
                 onClick={() => scrollToSection('testimonials')}
-                className="text-[#210335] hover:text-pink-400 hover:border-b-2 border-pink-400"
+                className="text-[#210335] hover:text-[#42066b] hover:border-b-2 border-[#42066b]"
               >
                 Testimonials
               </button>
@@ -93,7 +93,7 @@ export default function Nav() {
             <li>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-[#210335] hover:text-pink-400 hover:border-b-2 border-pink-400"
+                className="text-[#210335] hover:text-[#42066b] hover:border-b-2 border-[#42066b]"
               >
                 Contact
               </button>
@@ -110,7 +110,7 @@ export default function Nav() {
                   scrollToSection('home');
                   toggleMenu();
                 }}
-                className="block text-white px-10 hover:text-pink-400"
+                className="block text-white px-10 hover:text-[#42066b]"
               >
                 Home
               </button>
@@ -121,7 +121,7 @@ export default function Nav() {
                   scrollToSection('product-plan');
                   toggleMenu();
                 }}
-                className="block text-white px-10 hover:text-pink-400"
+                className="block text-white px-10 hover:text-[#42066b]"
               >
                 Features
               </button>
@@ -132,7 +132,7 @@ export default function Nav() {
                   scrollToSection('pricing');
                   toggleMenu();
                 }}
-                className="block text-white px-10 hover:text-pink-400"
+                className="block text-white px-10 hover:text-[#42066b]"
               >
                 Pricing
               </button>
@@ -143,7 +143,7 @@ export default function Nav() {
                   scrollToSection('testimonials');
                   toggleMenu();
                 }}
-                className="block text-white px-10 hover:text-pink-400"
+                className="block text-white px-10 hover:text-[#42066b]"
               >
                 Testimonials
               </button>
@@ -154,7 +154,7 @@ export default function Nav() {
                   scrollToSection('contact');
                   toggleMenu();
                 }}
-                className="block text-white px-10 hover:text-pink-400"
+                className="block text-white px-10 hover:text-[#42066b]"
               >
                 Contact
               </button>

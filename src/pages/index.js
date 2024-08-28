@@ -11,6 +11,8 @@ import Upcoming from "../components/upcomingEvents"
 import Amazing from "../components/ourServices"
 import ContactUs from "../components/contactUs"
 import Footer from "../components/footer"
+import TestimonialsSection from "../components/sliderTestimonials"
+
 
 const IndexPage = () => {
   return (
@@ -23,6 +25,7 @@ const IndexPage = () => {
      <Mockup />
      <PricePlans />
      <Testimonial />
+     {/* <TestimonialsSection/> */}
      <Upcoming />
      <Amazing />
      <ContactUs />
