@@ -42,7 +42,7 @@ export default function ContactUs() {
             <div className="">HwVJl@example.com</div>
           </div>
         </div>
-        <div ref={sectionRef} className="md:border-l-4 px-10 flex items-center justify-center">
+        <div ref={sectionRef} className="md:border-l-4 px-5 flex items-center justify-center">
           <img
             alt="call"
             className="rounded-3xl"

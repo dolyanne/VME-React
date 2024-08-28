@@ -6,9 +6,13 @@ export default function PricePlans() {
   return (
     <div className="price-plans" ref={sectionRef}>
       {/* <!-- Background Circles --> */}
-      <div className="circle bg-purple-600 w-72 h-72 top-0 left-0 opacity-50"></div>
+      {/* Background Circles */}
+      {/* <div className="circle bg-purple-600 w-56 h-56 top-16 left-16 opacity-50 md:w-40 md:h-40 md:top-8 md:left-8 lg:w-56 lg:h-56 lg:top-16 lg:left-16" />
+<div className="circle bg-purple-800 w-64 h-64 bottom-16 right-14 opacity-75 md:w-48 md:h-48 md:bottom-8 md:right-8 lg:w-64 lg:h-64 lg:bottom-16 lg:right-14" /> */}
+
+      {/* <div className="circle bg-purple-600 w-72 h-72 top-0 left-0 opacity-50"></div>
       <div className="circle bg-purple-700 w-40 h-40 top-1/4 right-1/4 opacity-75"></div>
-      <div className="circle bg-pink-500 w-32 h-32 bottom-1/4 left-1/4 opacity-50"></div>
+      <div className="circle bg-pink-500 w-32 h-32 bottom-1/4 left-1/4 opacity-50"></div> */}
       {/* <div className="circle bg-purple-800 w-24 h-24 bottom-16 right-16 opacity-75"></div> */}
       <div id="pricing" className="bg-[#230335] pb-10 px-2">
         <section className="section py-24">
@@ -71,19 +75,21 @@ export default function PricePlans() {
             </div>
           </div>
           {/* Decorative Circles */}
-          {/* <div className="overflow-hidden relative">
-            <div
-              className="circle circle-large"
-              style={{ top: "-100px", right: "-200px" }}
-            />
-          </div> */}
+          <div className="overflow-hidden relative"></div>
           {/* <div
             className="circle circle-small"
             style={{ bottom: "-50px", left: "-50px" }}
           /> */}
+          {/* <div
+        className="circle circle-small"
+        style={{ bottom: "-40px",  right:"-5px"}}
+      /> */}
+          <div className="circle bg-purple-600 w-56 h-56 top-16 left-16 opacity-50 md:w-40 md:h-40 md:top-8 md:left-8 lg:w-56 lg:h-56 lg:top-16 lg:left-16" />
+          <div className="circle bg-purple-800 w-64 h-64 bottom-16 right-10 opacity-75 md:w-48 md:h-48 md:bottom-8 md:right-8 lg:w-64 lg:h-64 lg:bottom-16 lg:right-14" />
         </section>
       </div>
-      <div  id="hero" className=" bg-[#f5f5f5] p-10 md:p-20 ">
+     <section>
+     <div id="hero" className=" bg-[#f5f5f5] p-10 md:p-20 ">
         <div className="relative w-full min-h-96 rounded-lg overflow-hidden shadow-lg bg-gray-100">
           <a href="#">
             <img
@@ -107,6 +113,7 @@ export default function PricePlans() {
           </a>
         </div>
       </div>
+     </section>
     </div>
   );
 }

@@ -2,16 +2,24 @@ import React from 'react'
 
 export default function Amazing() {
   return (
-    <section id="services" className="py-32 relative">
+    <section id="services" 
+    className="relative parallax-bg py-20 "
+        data-parallax="scroll"
+        data-image-src="/img/images/hero.banner-3.jpg"
+    // className="py-32 relative"
+    >
     {/* Background Circles */}
-    <div className="circle bg-purple-600 w-56 h-56 top-16 left-16 opacity-50" />
-    <div className="circle bg-purple-700 w-40 h-40 top-1/4 right-1/4 opacity-75" />
-    <div className="circle bg-pink-500 w-32 h-32 bottom-1/4 left-1/4 opacity-50" />
-    <div className="circle bg-purple-800 w-24 h-24 bottom-16 right-16 opacity-75" />
+{/* Background Circles */}
+<div className="circle bg-purple-600 w-56 h-56 top-16 left-16 opacity-50 md:w-40 md:h-40 md:top-8 md:left-8 lg:w-56 lg:h-56 lg:top-16 lg:left-16" />
+<div className="circle bg-purple-800 w-64 h-64 bottom-16 right-14 opacity-75 md:w-48 md:h-48 md:bottom-8 md:right-8 lg:w-64 lg:h-64 lg:bottom-16 lg:right-14" />
+
+    {/* <div className="circle bg-purple-700 w-40 h-40 top-1/4 right-1/4 opacity-75" /> */}
+    {/* <div className="circle bg-pink-500 w-32 h-32 bottom-1/4 left-1/4 opacity-50" /> */}
+    {/* <div className="circle bg-purple-800 w-64 h-64 bottom-16 right-14 opacity-75" /> */}
     <div className="container mx-auto text-center relative z-10">
       <div className="w-64 h-1 bg-white mx-auto mb-4" />
       <h2 className="text-4xl font-bold mb-12">
-        Our <span className="text-pink-500">Amazing</span> Services
+        Our <span className="text-[#ffff00]">Amazing</span> Services
       </h2>
       <div className="flex justify-center items-center flex-wrap gap-8">
         {/* Service 1 */}
